@@ -66,7 +66,7 @@ void loop()
   int yGyro = ((data[3] * 256) + data[2]);
   int zGyro = ((data[5] * 256) + data[4]);
   
-  // Output to the serial monitor
+  // Output data to the serial monitor
   Serial.print("X-Axis of Rotation:  ");
   Serial.println(xGyro);
   Serial.print("Y-Axis of Rotation:  ");
