@@ -89,5 +89,6 @@ void loop()
     Particle.publish("X-Axis of Rotation :",  String(xGyro));
     Particle.publish("Y-Axis of Rotation :",  String(yGyro));
     Particle.publish("Z-Axis of Rotation :",  String(zGyro));
+    delay(1000);
 }
 
