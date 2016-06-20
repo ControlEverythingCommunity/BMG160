@@ -87,7 +87,9 @@ void loop()
     
     // Output data to dashboard
     Particle.publish("X-Axis of Rotation :",  String(xGyro));
+    delay(1000);
     Particle.publish("Y-Axis of Rotation :",  String(yGyro));
+    delay(1000);
     Particle.publish("Z-Axis of Rotation :",  String(zGyro));
     delay(1000);
 }
