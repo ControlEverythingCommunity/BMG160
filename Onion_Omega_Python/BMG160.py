@@ -24,7 +24,7 @@ time.sleep(0.5)
 # BMG160 address, 0x68(104)
 # Read data back from 0x02(02), 6 bytes
 # X-Axis LSB, X-Axis MSB, Y-Axis LSB, Y-Axis MSB, Z-Axis LSB, Z-Axis MSB
-data = i2c.readsBytes(0x68, 0x02, 6)
+data = i2c.readBytes(0x68, 0x02, 6)
 
 # Convert the data
 xGyro = data[1] * 256 + data[0]
